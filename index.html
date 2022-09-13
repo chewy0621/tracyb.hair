@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets1/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== FONT AWESOME ===============-->
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets1/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets1/css/styles.css">
+
+        <title>Responsive Personal Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Tracy</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home-alt nav__icon'></i> Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bxs-user nav__icon'></i> About
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class='bx bx-briefcase nav__icon'></i> Services
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class='bx bx-folder nav__icon'></i> Work
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    <i class='bx bx-x nav__close'id ="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id ="theme-button" ></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-shape-square' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            
+                            <a href="https://www.instagram.com/tracyb.hair/" target ="_blank" class="home__social-icon">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+
+                            <a href="https://www.google.com/maps/place/Compound+Cut+Club+(+Barbershop+)/@53.5512609,-113.4929995,17z/data=!3m1!4b1!4m5!3m4!1s0x53a0236be1302f81:0x2959ecacffffbefd!8m2!3d53.5512609!4d-113.4908055" target ="_blank" class="home__social-icon">
+                                <i class='bx bx-map' ></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class = "home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                                    <image class="home__blob-img" x = "0" y ="-30"  xlink:href="assets1/img/tracy.png"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'm Tracy</h1>
+                            <h3 class="home__subtitle">Hair Stylist</h3>
+                            <p class="home__description">Very experience in asian/dark hair blonding</p>
+                            <a href="https://compoundcutclub.com/" target ="_blank" class="button button--flex">
+                                Book With Me<i class='bx bx-user button__icon'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class='bx bx-mouse home__scroll-mouse'></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class='bx bx-down-arrow-alt home__scroll-arrow'></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My introduction</span>
+            
+                <div class="about__container container grid">
+                    <img src="assets1/img/compound.png" alt="" class="about__img">
+    
+                        <div class="about__data">
+                            <div class="about__info">
+                                <div class="about__box">
+                                    <i class='bx bx-award about__icon' ></i>
+                                    <h3 class="about__title">Experience</h3>
+                                    <span class="about__subtitle">2 + years</span>
+                                </div>
+    
+                                <div class="about__box">
+                                    <i class='bx bx-briefcase about__icon' ></i>
+                                    <h3 class="about__title">Styled</h3>
+                                    <span class="about__subtitle">30 + clients</span>
+                                </div>
+    
+                                <div class="about__box">
+                                    <i class='bx bx-user about__icon' ></i>
+                                    <h3 class="about__title">Response</h3>
+                                    <span class="about__subtitle">Online 24/7</span>
+                                </div>
+                            </div>
+    
+                            <p class="about__description">
+                                Hair Stylist, with extensive knowledge in asian dark hair blonding | permanent straightening | hair extensions.
+                            </p>
+    
+                            <div class="about__buttons">
+                            <a href="https://www.instagram.com/tracyb.hair/" target = "_blank" class="button button--flex">
+                                Contact Me<i class='bx bx-message-square button__icon'></i>
+                            </a>
+                        </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My Personal Journey</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target ='#education'>
+                            <i class='bx bxs-graduation qualification__icon' ></i>
+                            Education
+                        </div>
+
+                        <!-- <div class="qualification__button button--flex" data-target = '#work'>
+                            <i class='bx bx-briefcase qualification__icon' ></i>
+                            Work
+                        </div> -->
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                        <div class="qualification__content qualification__active" data-content id = "education">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Diploma in Hair Styling</h3>
+                                    <span class="qualification__subtitle">MC College <br> Edmonton, AB</span>
+                                    <div class="qualification__calender">
+                                        <i class='bx bx-calendar' ></i>
+                                        Sep 2020- June 2021
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <!-- <div class="qualification__content" data-content id = "work"> -->
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <!-- <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Compound Cut Club</h3>
+                                    <span class="qualification__subtitle"></span>
+                                    <div class="qualification__calender">
+                                        <i class='bx bx-calendar' ></i>
+                                        
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">What I Offer</span>
+                
+
+                <div class="services__container container grid">
+                    <!--==================== SERVICES 1 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="fa-solid fa-scissors services__icon"></i>
+                            <h3 class="services__title">Asian/Dark Hair Blonding</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class='bx bx-right-arrow-alt button__icon' ></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Asian/Dark Hair Blonding</h4>
+                                <i class='bx bx-x services__modal-close' ></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class='bx bxs-check-circle services__modal-icon' ></i>
+                                        <p>I blonde hair</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class='bx bxs-check-circle services__modal-icon' ></i>
+                                        <p>I blonde hair</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class='bx bxs-check-circle services__modal-icon' ></i>
+                                        <p>I blonde hair</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SERVICES 2 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class='bx bx-ruler services__icon' ></i>
+                            <h3 class="services__title">Permanment Straightening</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class='bx bx-right-arrow-alt button__icon' ></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Permanment Straightening</h4>
+                                <i class='bx bx-x services__modal-close' ></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class='bx bxs-check-circle services__modal-icon' ></i>
+                                        <p>I blonde hair</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class='bx bxs-check-circle services__modal-icon' ></i>
+                                        <p>I blonde hair</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class='bx bxs-check-circle services__modal-icon' ></i>
+                                        <p>I blonde hair</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SERVICES 3 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class='bx bx-female-sign services__icon'></i>
+                            <h3 class="services__title">Hair Extensions</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class='bx bx-right-arrow-alt button__icon' ></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Hair Extensions</h4>
+                                <i class='bx bx-x services__modal-close' ></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class='bx bxs-check-circle services__modal-icon' ></i>
+                                        <p>I blonde hair</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class='bx bxs-check-circle services__modal-icon' ></i>
+                                        <p>I blonde hair</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class='bx bxs-check-circle services__modal-icon' ></i>
+                                        <p>I blonde hair</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Work</h2>
+                <span class="section__subtitle">Most recent work</span>
+
+                <div class="portfolio__container container swiper-container">
+                    <div class = "swiper-wrapper">
+                        <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets1/img/client1.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Colour</h3>
+                                <p class="portfolio__description">Service high-profile clients with intricate colouring and highlighting techniques</p>
+                                <a href="https://www.instagram.com/stories/highlights/17878370546507685/ " target ="_blank" class="button button--flex button--small portfolio__button">
+                                    View More
+                                    <i class='bx bx-right-arrow-alt button__icon' ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets1/img/client2.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Permanent Straightening</h3>
+                                <p class="portfolio__description">Remove your wavy curls permanently using chemical treatments to give you Straight flowing hair without using a styler daily.</p>
+                                <a href= "https://www.instagram.com/stories/highlights/17921770502393623/" target ="_blank"  class="button button--flex button--small portfolio__button">
+                                    View More
+                                    <i class='bx bx-right-arrow-alt button__icon' ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets1/img/client3.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Hair Extensions</h3>
+                                <p class="portfolio__description">Installation of hair extensions</p>
+                                <a href="https://www.instagram.com/stories/highlights/17945568266151266/"  target ="_blank"  class="button button--flex button--small portfolio__button">
+                                    View More
+                                    <i class='bx bx-right-arrow-alt button__icon' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class='bx bx-chevron-right swiper-portfolio-icon'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-chevron-left swiper-portfolio-icon' ></i>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIALS ====================-->
+            <section class="testimonial section">
+                <h2 class="section__title">Testimonial</h2>
+                <span class="section__subtitle">My Client Saying</span>
+
+                <div class="testimonial__container container swiper-container">
+                    <div class ="swiper-wrapper">
+                        <!--==================== TESTIMONIALS 1 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets1/img/review1.png" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Angeli Aluning</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">Tracy did an amazing job with my hair! 
+                                She connected with me very well and answered all my questions about the process and more. 
+                                It was my first time there and the atmosphere was very welcoming and very team like. 
+                                This spot is definitely a place to check out as it has a different aesthetic than other salons too. 
+                                Keep up the great job! 👍</p>
+                        </div>
+
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets1/img/me.png" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Brandon Chiu</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">Tracy is an amazing hair stylist, when I met her
+                                she gave me a warm welcome, and walked me down the whole process. She loves her job and 
+                                always does her best to satisfy her clients.  ❤️</p>
+                        </div>
+
+                        <!-- <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/review1.png" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Angeli Aluning</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                    <i class='bx bxs-star testimonial__icon-star' ></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">Tracy did an amazing job with my hair! 
+                                She connected with me very well and answered all my questions about the process and more. 
+                                It was my first time there and the atmosphere was very welcoming and very team like. 
+                                This spot is definitely a place to check out as it has a different aesthetic than other salons too. 
+                                Keep up the great job! 👍</p>
+                        </div> -->
+                    </div>
+
+                    <!--==================== Add Pagination====================-->
+                    <div class="swiper-pagination swiper-pagination-testimonial"></div>
+                </div>
+            </section>
+          
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Tracy</h1>
+                        <span class="footer__subtitle">Hair Stylist</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#portfolio" class="footer__link">Work</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/tracyb.hair/" target ="_blank" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.instagram.com/tracyb.hair/" target="_blank" class="footer__social">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; Tracy. All rights reserved</p>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets1/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets1/js/main.js"></script>
+    </body>
+</html>
